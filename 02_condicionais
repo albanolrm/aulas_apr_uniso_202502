@@ -1,0 +1,9 @@
+# Estrutura de decisão simples
+idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+    print("Maior de idade.")
+elif idade >= 16:
+    print("Pode votar, mas não dirigir.")
+else:
+    print("Menor de idade.")
