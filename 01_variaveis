@@ -1,0 +1,13 @@
+# Declaração de variáveis e tipos
+nome = "Ana"
+idade = 20
+altura = 1.68
+estudante = True
+
+# Operadores aritméticos e lógicos
+soma = 10 + 5
+comparacao = idade > 18 and estudante
+
+# Entrada e saída de dados
+nome_usuario = input("Digite seu nome: ")
+print("Olá,", nome_usuario)
