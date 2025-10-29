@@ -1,0 +1,20 @@
+# Lista
+nomes = ["Ana", "Bruno", "Carla"]
+nomes.append("Diego")
+print("Lista:", nomes)
+
+# Tupla
+cores = ("vermelho", "verde", "azul")
+print("Tupla:", cores)
+
+# Dicionário
+aluno = {"nome": "Ana", "idade": 20, "curso": "Engenharia"}
+print("Nome do aluno:", aluno["nome"])
+
+# Conjunto
+numeros = {1, 2, 3, 3, 2, 1}
+print("Conjunto:", numeros)  # elimina duplicados
+
+# Iteração
+for chave, valor in aluno.items():
+    print(chave, ":", valor)
