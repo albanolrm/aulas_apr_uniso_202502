@@ -1,0 +1,21 @@
+# Definição e uso de função
+def saudacao(nome):
+    print("Olá,", nome)
+
+saudacao("Maria")
+
+# Função com retorno de valor
+def soma(a, b):
+    return a + b
+
+resultado = soma(3, 4)
+print("Resultado da soma:", resultado)
+
+# Exemplo de modularização
+# (em outro arquivo, salvar como utilidades.py)
+# def dobro(x):
+#     return x * 2
+
+# No programa principal:
+# from utilidades import dobro
+# print(dobro(5))
