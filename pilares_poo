@@ -1,0 +1,56 @@
+# (1) abstração
+class Cachorro:
+    def __init__(self, nome, raca):
+        self.nome = nome
+        self.raca = raca
+
+    def latir(self):
+        print("Au au!")
+
+dog = Cachorro("Rex", "Labrador")
+dog.latir()
+
+
+# (2) encapsulamento
+class ContaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo  # atributo privado
+
+    def depositar(self, valor):
+        self.__saldo += valor
+
+    def ver_saldo(self):
+        print(f"Saldo atual: R${self.__saldo}")
+
+conta = ContaBancaria(100)
+conta.depositar(50)
+conta.ver_saldo()
+# conta.__saldo  -> acesso direto proibido
+
+
+# (3) herança
+class Animal:
+    def mover(self):
+        print("O animal está se movendo")
+
+class Cachorro(Animal):  # herda de Animal
+    def latir(self):
+        print("Au au!")
+
+dog = Cachorro()
+dog.mover()  # herdado de Animal
+dog.latir()
+
+
+# (4) polimorfismo
+class Gato:
+    def falar(self):
+        print("Miau")
+
+class Cachorro:
+    def falar(self):
+        print("Au au")
+
+animais = [Gato(), Cachorro()]
+for animal in animais:
+    animal.falar()  # mesmo método, comportamentos diferentes
